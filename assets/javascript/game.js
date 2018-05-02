@@ -36,16 +36,16 @@ var images = ["./assets/images/Crystal-Blue.png", "./assets/images/Crystal-Purpl
 		resetCrystals ();
 	}
 
-// Running Code
 
-	// Inital Page Set Up
+
+
 	randomTargetNumber();
 	resetHTML ();
 	resetCrystals ();
 
 // Click Functions
 	function crystalClick () {
-		//attr returns first value of selected html element
+
 		counter += parseInt($(this).attr("value"));
 		$(".score-number").html(counter);
 		if (counter == targetNumber) {
@@ -58,5 +58,5 @@ var images = ["./assets/images/Crystal-Blue.png", "./assets/images/Crystal-Purpl
 		};
 	};
 
-	//Throughout life cycle of the document, accounting for every single time document is dynamically changed execute crystalClick function
+
 	$(document).on("click", ".crystal", crystalClick);
